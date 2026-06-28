@@ -1,5 +1,5 @@
-const PROFILE_PHOTO = "files/prof2.jpeg";
-const RESUME_PDF    = "files/Md_Ali_Shekh_Resume.pdf";
+const PROFILE_PHOTO = "files/profile_picture.jpeg";
+const RESUME_PDF    = "files/Md_Ali_Shekh_Python_Resume.pdf";
 
 /* ── Photo loader ── */
 const frame = document.getElementById('photo-frame');
@@ -52,8 +52,8 @@ const skillsCore = [
   { name: "Python",  logo: `${CDN}/python/python-original.svg` },
   { name: "FastAPI", logo: `${CDN}/fastapi/fastapi-original.svg` },
   { name: "Django",  logo: `${CDN}/django/django-plain.svg` },
-  { name: "HTML",    logo: `${CDN}/html5/html5-original.svg` },
-  { name: "CSS",     logo: `${CDN}/css3/css3-original.svg` },
+  // { name: "HTML",    logo: `${CDN}/html5/html5-original.svg` },
+  // { name: "CSS",     logo: `${CDN}/css3/css3-original.svg` },
 ];
 
 const skillsDevOps = [
@@ -61,19 +61,21 @@ const skillsDevOps = [
   { name: "AWS",     logo: `${CDN}/amazonwebservices/amazonwebservices-original-wordmark.svg` },
   { name: "CI/CD",   logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" },
   { name: "GitHub",  logo: `${CDN}/github/github-original.svg` },
+  { name: "Git",     logo: `${CDN}/git/git-original.svg` },
   { name: "Render",  logo: "https://render.com/images/render-banner.png" },
+  { name: "PostgreSQL", logo: `${CDN}/postgresql/postgresql-original.svg` },
+  { name: "MySQL",      logo: `${CDN}/mysql/mysql-original.svg` },
 ];
 
 /* CHANGE 3: JWT removed from skillsTools */
 const skillsTools = [
-  { name: "PostgreSQL", logo: `${CDN}/postgresql/postgresql-original.svg` },
-  { name: "MySQL",      logo: `${CDN}/mysql/mysql-original.svg` },
+  
   { name: "VS Code",    logo: `${CDN}/vscode/vscode-original.svg` },
   { name: "PyCharm",    logo: `${CDN}/pycharm/pycharm-original.svg` },
+  { name: "Google Colab", logo: "https://upload.wikimedia.org/wikipedia/commons/d/d0/Google_Colaboratory_SVG_Logo.svg" },
   { name: "Jupyter",    logo: `${CDN}/jupyter/jupyter-original.svg` },
-  { name: "Anaconda",   logo: `${CDN}/anaconda/anaconda-original.svg` },
   { name: "Postman",    logo: "https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" },
-  { name: "Git",        logo: `${CDN}/git/git-original.svg` },
+  
 ];
 
 function renderSkills(id, skills) {
