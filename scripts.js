@@ -25,7 +25,7 @@ const html      = document.documentElement;
 const toggleBtn = document.getElementById('themeToggle');
 const icon      = document.getElementById('themeIcon');
 let dark = false;
-icon.className = 'fas fa-sun';
+icon.className = 'fas fa-moon';
 toggleBtn.addEventListener('click', () => {
   dark = !dark;
   html.setAttribute('data-theme', dark ? 'dark' : 'light');
